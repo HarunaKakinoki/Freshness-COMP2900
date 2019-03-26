@@ -1,0 +1,888 @@
+﻿/******************************************** for common components ********************************************/
+/* body */
+#mainBodyStyle {
+    margin:0;
+    padding:0;
+    border: 0;
+    width: 100%;
+    height: 100%;
+    font-family:'Candara';
+}
+#mainBodyStyleforFoodList {
+    margin:0;
+    padding:0;
+    border: 0;
+    width: 100%;
+    font-family:'Candara';
+}
+
+/* navigation bar */
+#mainNav {
+    position: fixed;
+    top: 0;
+    margin: 0;
+    padding: 2px 0;
+    width: 100%;
+    height: 85px;
+	text-align:center;
+	background-color:white;
+	border-bottom:3px solid;
+	z-index:1;
+}
+#navCon {
+	margin:0 auto auto auto;
+}
+#navLogo {
+	width:20%;
+    padding: 0;
+    cursor: pointer;
+}
+#navLogo img {
+	height:85px;
+}
+#navSearch {
+	width:60%;
+	
+}
+#searchText {
+	width:60%;
+	height:30px;
+	margin-left:15px;
+	font-size:18px;
+}
+#searchButton {
+	width:20%;
+	height:40px;
+	margin-left:15px;
+	font-size:20px;
+	font-weight:bold;
+	color:white;
+	background-color:#00a368;
+	border-radius:10px;	
+	cursor: pointer;
+}
+#navCategory {
+	width:20%;
+}
+#categoryButton {
+	width:20%;
+	height:30px;
+	padding:10px;
+	font-size:26px;
+	font-weight:bold;
+	color:white;
+	background-color:#ffc34d;
+	border-radius:30px;
+    text-decoration: none;
+    cursor: pointer;
+	box-shadow: 2px 2px 1px #888888;
+}
+#categoryButton:hover {
+   background: #FAFF69;
+   text-decoration: none;
+}
+
+#glassIcon_img {/*for mobile(hidden)*/
+	float:right;
+	display:none;
+}
+/* footer */
+#conFooter {
+    position: fixed;
+    bottom: 0;
+    margin: 0;
+    padding: 15px 15px 15px 0;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    font-size: 10px;
+    font-style: italic;
+    font-weight: 400;
+    color: white;
+    background-color: black;
+}
+#footerTable {
+    margin: auto;
+    padding-right: 15px;
+    width: 50%;
+}
+#footerTable td{
+    width: 30%;
+}
+#conAboutus {
+    margin: 0 10px 0 0 ;
+    padding: 0 0 0 10px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    font-style: initial;
+    text-decoration: none;
+}
+#conFooter p{
+    padding: 1px 0 0 0;
+}
+
+
+/******************************************** components of each pages ********************************************/
+
+/* search conditional panel (hiding) */
+#searchPanel {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 150px;
+    background-color: black;
+    z-index: 1;
+}
+#closeButton img {
+    float: left;
+    margin: 10px 0 0 50px;
+    width: 50px;
+    cursor: pointer;
+}
+#searchConditionalTable {
+    margin: auto;
+    padding-top: 30px;
+    width: 600px;
+    font-size: 30px;
+}
+.searchConditionalTable {
+    margin: auto;
+    padding-top: 30px;
+    width: 600px;
+    font-size: 30px;
+}
+#searchConditionalTable td {
+    width: 25%;
+    color: white;
+}
+#searchConditionalTable div {
+    padding-top: 15px;
+    color: #97A7A7;
+}
+#searchConditionalTable .spaceForSearchPanel {
+	height:30px;
+}
+#searchConditionalTable input {
+    margin: 10px 0 30px 0;
+}
+#searchSubmit {
+	width:40%;
+	height:36px;
+	margin-top:40px;
+	font-size:18px;
+	color:white;
+	background-color:#00a368;
+	border-radius:5px;
+	font-weight:bold;
+}
+
+/* Search bar for mobile (hidden) */
+#searchPanel2 {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 150px;
+    background-color: black;
+    z-index: 1;
+    opacity:0.9;
+}
+#closeButton2 img {
+    float: left;
+    margin: 10px 0 0 50px;
+    width: 50px;
+    cursor: pointer;
+}
+#searchPanel2 table {
+	margin:auto;
+}
+#searchPanel2 tr {
+	width:100%;
+	text-align:center;
+	margin:30px 0 0 0;
+}
+#closeButton2 img {
+	margin:10px 0 0 10px;
+    height:30px;
+    width:30px;
+}
+#searchTextMobile {
+	width:66%;
+	font-size:16px;
+	margin:30px 0 0 0;
+	float:left;
+}
+#searchButtonMobile {
+	width:60px;
+	height:26px;
+	margin-top:30px;
+	font-size:12px;
+	font-weight:bold;
+	color:white;
+	background-color:#00a368;
+	border-radius:5px;
+	}
+	
+/**** content (food detail) ****/
+/*content header*/
+#foodContent {
+    width:70%;
+    margin: auto;
+    margin-top: 100px;
+	text-align:left;
+    font-family: tahoma;
+}
+
+#foodTitle {
+	width:100%;
+    font-size: 42px;
+    font-weight:bold;
+    color:white;
+	line-height:70px;
+	border-radius:3px;
+}
+#foodTitle span {
+    padding-left: 20px;     
+}
+
+
+/*short summary table*/
+#conResultTable {
+	margin:20px auto;
+    width:90%;
+    font-size: 30px;
+	border-collapse: collapse;
+	border-radius:3px;
+}
+#conResultTable td {
+    text-align: left;
+    padding-left: 10px;
+	border-bottom: 2px solid;   
+}
+#conResultTable tr:nth-child(even) {
+	background-color:white;
+} 
+
+/*Preservation methods*/
+#methodTable {
+    margin: auto;
+    padding-bottom: 15px;
+	text-align:center;
+    width: 100%;
+    margin-top: 25px;
+	border:2px solid;
+	border-radius:5px;  
+}
+#methodTable li {
+	list-style:decimal;
+	font-size:28px;
+	line-height:50px;
+}
+#methodTable .tdletter_size {
+	font-size:28px;
+	line-height:50px;
+}
+#methodTable .tdleft {
+    padding: 0 0 0 30px;
+	width:40%;
+}
+.tdleft img {
+    width: 100%;
+}
+#methodTable .tdright {
+    padding: 0 30px 0 30px;
+	text-align:left;
+}
+.methodHeader {
+    height: 40px;
+	margin:15px 30px;
+	font-size: 30px;
+	font-weight:bold;
+    text-align: left;
+    color: white;
+	border: 2px solid;
+}
+.methodHeader span {
+    padding: 0 10px;
+}
+.methodHeaderDays {
+    font-weight: 300;
+    font-size: 27px;
+}
+.methodHeader img {
+	width:25px;
+	height:25px;
+	cursor:pointer;
+}
+/*Setting color according to Food category*/
+/**color_set - food name & Method header, 
+tdcolor_set - background color of the summary table,
+letter_color - letter color of the summary table,
+border_color - border color of nav bar **/
+#color_con_vege .color_set{
+	background-color: #00a368;
+}
+#color_con_vege .tdcolor_set{
+	background-color: #ABE1C7;
+	color:#339966;
+}
+#color_con_vege .letter_color {
+	color:#339966;
+}
+#color_con_vege .border_color {
+	color:#339966;
+}
+#color_con_meat .color_set{
+    background-color: #e3493b;
+}
+#color_con_meat .tdcolor_set{
+    background-color: #ffe6e6;
+}
+#color_con_meat .letter_color {
+	color: #e24536;
+}
+#color_con_meat .border_color {
+	color:#e3493b;
+}
+#color_con_daily .color_set{
+    background-color: #6599ff;
+} 
+#color_con_daily .tdcolor_set{
+    background-color: #e0eaff;
+}
+#color_con_daily .letter_color {
+	color: #3c5d99;
+}
+#color_con_daily .border_color {
+	color:#6599ff;
+}
+.border_color_common {
+    color: black;
+}
+
+/**** affiliate page ****/
+#affiliatedContent {
+    width:80%;
+    margin: auto;
+    margin-top: 80px;
+}
+#affiliatedTitle {
+    padding: 40px 0;
+    text-align: center;
+    font-family: Papyrus;
+    font-size: 32px;
+    font-weight: 900;
+}
+#affiliatedTable {
+    margin: auto;
+    width: 70%;
+    display: block;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+#affiliatedTable tr:nth-of-type(3n-2) {
+    height: 50px;
+}
+#affiliatedTable tr:nth-of-type(3n-1) {
+    height: 40px;
+}
+#affiliatedTable tr:nth-of-type(3n) {
+    height: 200px;
+}
+#affiliatedTable td:nth-of-type(1) {
+    width: 30%;
+}
+#affiliatedTable td:nth-of-type(2) {
+    width: 70%;
+    padding: 10px 0 10px 10px;
+}
+#affiliatedTable td img {
+    width: 150px;
+}
+#affiliatedTable .step {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: tahoma;
+    background-color: #00a368;
+}
+#affiliatedTable .stepTitle {
+    width: 100%;
+    text-align: center;
+    color: #339966;
+    font-size: 26px;
+    font-family: tahoma;
+    background-color: #abe1c7;
+}
+.titleApp {
+    margin: 0;
+    padding: 0;
+    font-size: 28px;
+}
+.red {
+    color: #e3493b;  
+} 
+
+/* Easter egg */
+.easter1 {
+    position: fixed;
+    top: 130px;
+    right: 10px;
+}
+.easter2 {
+    position: fixed;
+    bottom: 70px;
+    right: 10px;
+}
+.easter3 {
+    position: fixed;
+    bottom: 70px;
+    left: 10px;
+}
+#flower1 {
+    position: fixed;
+    top: 90px;
+    left: 220px;
+}
+#flower1 img {
+    width: 120%;
+}
+#flower2 img {
+    width: 100%;
+}
+#flower3 img {
+    width: 80%;
+}
+
+.easterTitle {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+    background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+.easterSubTitle {
+    margin: 30px 0;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.6, #2f2), color-stop(1, #f22) );
+    background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.6, #2f2), color-stop(1, #f22) );
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+#subTitleEaster {
+    padding: 0 20px 20px 20px;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+/******************************************** shared class ********************************************/
+
+.verticalTop {
+    vertical-align: top;
+}
+.spaceForFooter {
+    margin-top: 130px;
+}
+.errorMessage {
+    margin: 50px;
+    font-size: 32px;
+    color: #e3493b;  
+}
+/******************************************** animation ********************************************/
+/* animation */
+.navButton:hover, #loginLabel:hover, #contents .panel img:hover, #closeButton img:hover {
+    opacity: 0.5;
+}
+/******************************************** responsible design ********************************************/
+/* responsible design */
+@media screen and (max-width: 1080px){
+    
+	/* navigation bar */
+	#mainNav {
+		height: 85px;
+	}
+	#navLogo img {
+		height:75px;
+	}
+	#searchText {
+		width:70%;
+		height:30px;
+		font-size:18px;
+	}
+	#searchButton {
+		width:80px;
+		height:40px;
+		margin-left:4px;
+		font-size:16px;
+	}
+	#categoryButton {
+		height:30px;
+		padding:10px;
+		font-size:26px;
+	}
+	/******************************************** components of each pages ********************************************/
+
+	/* search conditional panel (hiding) */
+	#searchConditionalTable {
+		font-size: 26px;
+	}
+	#searchConditionalTable input {
+		margin: 20px 0 20px 0;
+	}
+	#searchSubmit {
+		height:30px;
+		font-size:14px;
+	}
+	/**** content (food detail) ****/
+	/*content header*/
+	#foodContent {
+        width: 80%;
+	}
+	
+	/*short summary table*/
+	#conResultTable {
+		font-size: 22px;
+	}
+}
+@media screen and (max-width: 992px){
+
+    /* navigation bar */
+    #mainNav {
+        height: 60px;
+    }
+	#navLogo {
+		margin:0;
+		width:50px;
+	}
+    #navLogo img {
+        height:60px;
+	}
+	#navSearch {
+		display:none;
+	}
+    #searchText {
+        display:none;
+    }
+    #searchButton {
+        display:none;
+    }
+	#navCategory {
+		width:80%;
+	}
+	#navCategory a {
+		margin: 0;
+	}
+    #glassIcon_img {
+		height:40px;
+        display:block;
+		cursor:pointer;
+    }
+    #categoryButton {
+        width:60px;
+        height:20px;
+        font-size:16px;
+	    float:right;	
+    }
+    /**** content (food detail) ****/
+    /*content header*/
+    #foodContent {
+		width:92%;
+		margin-top:65px;
+    }
+    #foodTitle {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    /*Preservation methods*/
+    #methodTable {
+        padding-bottom: 0px;
+    }
+    .methodHeader {
+        margin: 10px;
+		padding-top:5px;
+		width:92%;
+        height: 30px;
+        font-size: 18px;
+    }
+    .methodHeader span {
+        padding: 0 5px;
+    }
+    .methodHeaderDays {
+        font-size: 18px;
+    }
+    #methodTable ul {
+        margin: 0;
+        padding-left: 20px;        
+    }
+    #methodTable li {
+        font-size: 18px;
+        line-height: 20px;
+    }
+    #methodTable .tdletter_size {
+        font-size: 18px;
+        line-height: 20px;
+    }
+    #methodTable .tdleft {
+        padding-left: 10px;
+        width: 35%;
+    }
+    #methodTable .tdright {
+        padding: 0 10px;
+    }
+    /*Hiding search panel*/
+    #searchPanel { height: 190px; }
+    #searchConditionalTable {
+        width: 350px;
+        font-size:20px;
+        display: block;
+		margin-top:5px;
+        padding: 0 0 0 80px;
+    } 
+	.searchConditionalTable {
+        width: 350px;
+        font-size:20px;
+        display: block;
+		margin-top:5px;
+        padding: 0 0 0 80px;
+		margin:0px;
+    } 
+    #searchConditionalTable tr { 
+		width: 100%;
+    }
+    #searchConditionalTable td {
+        width: 60%;
+		line-height:30px;
+		display:inline-block;
+
+    }
+    #searchConditionalTable input {
+        margin: 10px 0 10px 0;
+    }
+    input#searchSubmit {
+		width:64px;
+		height:26px;
+		font-size:14px;
+		margin:0 0 0 20px;
+    }
+    #closeButton img {
+		margin-left:10px;
+        height:30px;
+        width:30px;
+    }
+    #searchConditionalTable .spaceForSearchPanel {
+		display:none;
+    }
+	/* Search bar for mobile page */
+	#searchPanel2 {
+		height:120px;
+	}
+	#searchPanel2 tr {
+		width:100%;
+		text-align:center;
+		margin:30px 0 0 0;
+	}
+    /**** affiliate page ****/
+    #affiliatedContent { width: 90%; }
+    #affiliatedTable { width: 100%; }
+    #footerTable {
+        padding-right: 20px;
+        width: 100%;
+    }
+    /**** easter ****/
+    .easterTitle {
+        font-size: 35px;
+    }
+    .easterSubTitle {
+        margin: 10px 0 20px 0;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    #subTitleEaster {
+        padding: 10px 20px 20px 20px;
+        font-size: 17px;
+        font-weight: 100;
+        line-height: 20px;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+
+    /* navigation bar */
+    #mainNav {
+        height: 60px;
+    }
+	#navLogo {
+		margin:0;
+		width:50px;
+	}
+    #navLogo img {
+        height:60px;
+	}
+	#navSearch {
+		display:none;
+	}
+    #searchText {
+        display:none;
+    }
+    #searchButton {
+        display:none;
+    }
+	#navCategory {
+		width:80%;
+	}
+	#navCategory a {
+		margin: 0;
+	}
+    #glassIcon_img {
+		height:40px;
+        display:block;
+		cursor:pointer;
+    }
+    #categoryButton {
+        width:60px;
+        height:20px;
+        font-size:16px;
+	    float:right;	
+    }
+    /**** content (food detail) ****/
+    /*content header*/
+    #foodContent {
+		width:92%;
+		margin-top:65px;
+    }
+    #foodTitle {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    /*Preservation methods*/
+    #methodTable {
+        padding-bottom: 0px;
+    }
+    .methodHeader {
+        margin: 10px;
+		padding-top:5px;
+		width:92%;
+        height: 30px;
+        font-size: 18px;
+    }
+    .methodHeader span {
+        padding: 0 5px;
+    }
+    .methodHeaderDays {
+        font-size: 18px;
+    }
+	.methodHeader img {
+		width:20px;
+		height:20px;
+		cursor:pointer;
+	}
+    #methodTable ul {
+        margin: 0;
+        padding-left: 20px;        
+    }
+    #methodTable li {
+        font-size: 18px;
+        line-height: 20px;
+    }
+    #methodTable .tdletter_size {
+        font-size: 18px;
+        line-height: 20px;
+    }
+    #methodTable .tdleft {
+        padding-left: 10px;
+        width: 35%;
+    }
+    #methodTable .tdright {
+        padding: 0 10px;
+    }
+    /*Hiding search panel*/
+    #searchPanel { height: 190px; }
+    #searchConditionalTable {
+        width: 350px;
+        font-size:20px;
+        display: block;
+		margin-top:5px;
+        padding: 0 0 0 80px;
+    } 
+    #searchConditionalTable tr { 
+		width: 100%;
+    }
+    #searchConditionalTable td {
+        width: 60%;
+		line-height:30px;
+		display:inline-block;
+
+    }
+    #searchConditionalTable input {
+        margin: 10px 0 10px 0;
+    }
+    input#searchSubmit {
+		width:64px;
+		height:26px;
+		font-size:14px;
+		margin:0 0 0 20px;
+    }
+    #closeButton img {
+		margin-left:10px;
+        height:30px;
+        width:30px;
+    }
+    #searchConditionalTable .spaceForSearchPanel {
+		display:none;
+    }
+	/* Search bar for mobile page */
+	#searchPanel2 {
+		height:120px;
+	}
+	#searchPanel2 tr {
+		width:100%;
+		text-align:center;
+		margin:30px 0 0 0;
+	}
+    /**** affiliate page ****/
+    #affiliatedContent { width: 90%; }
+    #affiliatedTable { width: 100%; }
+    #footerTable {
+        padding-right: 20px;
+        width: 100%;
+    }
+    /**** easter ****/
+    .easterTitle {
+        font-size: 35px;
+    }
+    .easterSubTitle {
+        margin: 10px 0 20px 0;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    #subTitleEaster {
+        padding: 10px 20px 20px 20px;
+        font-size: 17px;
+        font-weight: 100;
+        line-height: 20px;
+    }
+    #flower1 img {
+        width: 100%;
+    }
+    #flower2 img {
+        width: 60%;
+    }
+    #flower3 img {
+        width: 40%;
+    }
+
+}

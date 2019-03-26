@@ -1,0 +1,46 @@
+Freshness:
+Freshness provides the food preservation methods for you to keep the food fresh as long as you can.
+------------------------------------------------------------------------
+
+Pocket Pantry:
+Application designed to help you plan meals, create grocery lists and reduce waste
+
+
+Food smart: 
+Food Smart can keep the grocey item on track(days left to expire), we have tracking list and provide report for period of time.
+
+Take 2:
+http://www.take2foods.com
+Take2 helps inexperience users figure out what recipes to make with their ingredients. It prevents users from wasting their food because they're unsure of what to do with it. 
+Take 2 provide recipes for ingredient pairs.
+
+
+--------------------------------------------------------------------------
+*E-fridge(Victor):
+Reducing food waste by starting to manage your food in the fridge.
+
+*Wasted(Simran):
+http://students.bcitdev.com/A00989687/forAffiliates/WASTED.html#
+Web app that tracks what food you have on hand and reminds you when it's about to go bad
+
+*group 10 aka EcoList(Cameron):
+a meal planner and shopping list app
+
+
+*FridgeMates(Kenny):
+Web app to keep track of leftover meals inside of multiple fridges a user has access to.
+
+*Scavange(Sam31)
+Scavange is a web app that finds simple recipes from your leftovers. We hope to create a friendly community where people can share their recipes with each other.
+
+*Vegi-Smart(group 23 Jason Kim)
+Food Waste Manager for Fruits and Veggies
+Mobile focused web app which allows users to manage shopping lists and keep track of the fruits and veggies in their fridge. The app will generate reports to give the user feedback on how much food they've wasted.
+
+
+
+vegi (#00a368 ) meat (#e3493b ) Daily(#6599ff )
+vegi (#ABE1C7 ) meat (#ffe6e6 ) Daily(#e0eaff )
+vegi (#339966 ) meat (#e24536 ) Daily(#3c5d99 ;)
+
+210*240
